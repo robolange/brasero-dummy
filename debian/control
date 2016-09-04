@@ -1,0 +1,15 @@
+Source: brasero-dummy
+Section: gnome
+Priority: optional
+Maintainer: Robert Lange <rlange@corusa.net>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: brasero
+Architecture: all
+Conflicts: nautilus-cd-burner
+Description: Dummy package to remove Brasero without removing Gnome
+ The Debian gnome meta package requires Brasero, however Gnome does not
+ strictly require Brasero. This package replaces the Debian brasero
+ packages with empty packages, but still satisfies the gnome meta
+ package requirements.
